@@ -1,0 +1,215 @@
+# Site Settings
+repository: HeoJunHyoung/cloud-resume
+version: 2
+url: "https://heojunhyoung.github.io"
+baseurl: "/cloud-resume"
+
+# Latest Updated
+last_updated: "2026.06.02"
+
+# Personal Information
+name: 허준형
+title: Dev&Ops 엔지니어 (Cloud Infra & DevOps)
+
+# Appearance
+darkmode: never
+
+# Social Links
+github_username: HeoJunHyoung
+
+# Additional Icon Links
+additional_links:
+  - title: Email
+    icon: fas fa-envelope
+    url: mailto:junhyoung.heo@gmail.com
+  - title: Blog
+    icon: fa fa-tistory-custom
+    url: https://receiver40.tistory.com/
+
+# About Section
+about_profile_image: images/profile.png
+about_content: |
+  <div class="slogan-container">
+    <span class="quote-mark">“</span>
+      <span class="slogan-text">애플리케이션 소스코드부터 클라우드 아키텍처까지 인지하여 인프라를 지탱하는 Dev&Ops 엔지니어</span>
+    <span class="quote-mark">”</span>
+  </div>
+
+  애플리케이션 백엔드의 데이터 흐름과 대용량 분산 메시징 인프라의 특성을 상호 유기적으로 이해하고, 비즈니스의 지속 가능한 도약을 인프라 레벨에서 자동화·최적화하는 Dev&Ops 엔지니어 허준형입니다. 백엔드 코드레벨에서의 사소한 오버헤드가 컨테이너 및 대규모 클라우드 플랫폼 상에서 확장성과 가용성에 미치는 영향을 정량적인 지표 기반으로 추적하는 것을 즐깁니다.
+  
+  인프라 운영(Ops) 레이어에서는 Terraform을 통해 멀티 AZ VPC, RDS, Cache 아키텍처 전체를 모듈화 구조로 프로비저닝(IaC)하고, AWS EKS 클러스터 위에 Kustomize와 ArgoCD의 App-of-Apps 패턴을 결합하여 선언적인 GitOps 배포 파이프라인을 체계화했습니다. 또한, 서비스 안정성을 위해 k6 가상 유저 가혹 부하 테스트(Stress/Load Testing)와 Prometheus/Grafana 가시성 모니터링을 주도했으며, 런타임 환경의 N+1 문제와 병목을 해결하기 위해 Hibernate 인터셉터 기반의 실시간 쿼리 카운팅 APM 툴을 직접 설계해 데이터 기반 성능 고도화(Performance Engineering)를 완수했습니다.
+
+  Java와 Spring Boot 환경에서 고트래픽 트래픽 정합성을 제어하기 위해 Redis 분산 락 및 Redis Pub/Sub을 활용한 분산 웹소켓 채팅 인프라를 고안했으며, Spring Cloud Gateway 레이어에 커스텀 인가 필터를 구축하여 마이크로서비스(MSA) 분산 보안 구조를 고도화했습니다. 분산 DB 환경에서 데이터 결합도를 끊기 위해 Apache Kafka 기반 비동기 이벤트 구동형 아키텍처(EDA)를 정립하고 보상 트랜잭션 및 데이터 최종 일관성(Eventual Consistency) 구조를 오케스트레이션한 경험이 있습니다.
+  
+  사이버보안학 전공 배경을 바탕으로 IAM OIDC, IRSA 프로토콜 및 Bitnami Sealed Secrets 암호화 메커니즘을 결합한 보안 최우선주의(Security by Design) 아키텍처를 일관되게 고수하며, 기술적 문제를 분석하고 트러블슈팅한 과정을 250건 이상의 기술 블로그 포스팅으로 투명하게 영속화하고 있습니다.
+
+# Content Configuration 
+content:
+  - title: Skills
+    layout: list
+    content:
+      - layout: left
+        title: Cloud Infra & Orchestration (Ops)
+        description: |
+          * AWS 컴퓨팅/네트워크/데이터 솔루션 전반 (EKS, CloudFront, VPC, ALB, Route53, RDS, ElastiCache, DocumentDB, S3)
+          * Terraform 모듈 아키텍처 (VPC, 데이터베이스, 모니터링, 외부 자원 컴포넌트 분리 및 원격 S3 Sate/DynamoDB Lock 구축)
+          * Kubernetes 온프레미스(VirtualBox 4-Node 멀티클러스터 구조) 및 클라우드(Managed AWS EKS 클러스터) 운영 프로세스
+      - layout: left
+        title: DevOps & Performance SRE
+        description: |
+          * GitHub Actions (OIDC 인증 기반 AWS 연동) 파이프라인 및 ArgoCD 선언적 GitOps(App-of-Apps 패턴) 지속적 배포 표준화
+          * Kustomize 기반 Base/Overlay 구조를 통한 멀티 티어(Dev/Prod) 배포 환경 템플릿화 및 Sealed Secrets 보안 튜닝
+          * Prometheus & Grafana 관제 가시성 확보 (EKS, JVM 인스턴스, RDS 메트릭 대시보드 커스터마이징)
+          * k6 시나리오 기반 가상 유저(VUs) 대규모 부하 스트레스 테스트 및 Hibernate 인터셉터 기반 커스텀 쿼리 APM 툴 구현
+      - layout: left
+        title: Data & Messaging Pipeline
+        description: |
+          * Apache Kafka 메시징 브로커를 활용한 마이크로서비스 도메인 간 비동기 데이터 복사 및 최종 일관성 제어
+          * Redis 분산 세션 클러스터링(Stateless 구조), Redis 캐시 튜닝(TTL Jitter 설정) 및 Redisson 분산 락 동시성 제어
+          * Polyglot Persistence 설계 체계 (MySQL RDBMS 트랜잭션 도메인 및 NoSQL MongoDB 대용량 비정형 데이터 도메인 격리)
+      - layout: left
+        title: Backend Development (Dev)
+        description: |
+          * Java, Spring Boot, Spring Security, Spring Session, JPA/Hibernate, QueryDSL
+          * Spring Cloud Gateway 기반 Custom `AuthorizationHeaderFilter` 설계를 통한 통합 인가 아키텍처 구현
+          * `@Async` 비동기 스레드 풀 구조 설계를 통한 외부 I/O 블로킹 제어 및 톰캣 스레드 풀 고갈 방지
+          
+  - title: Projects
+    layout: list
+    content:
+      - layout: top-middle
+        title: ""
+        description: |
+          <div class="project-card">
+            <div class="project-card-header">
+              <a href="https://github.com/HeoJunHyoung/re-market" class="project-title-link" target="_blank">Re:Market - 하이퍼 로컬 중고 거래 플랫폼 및 채팅 서비스</a>
+              <div class="project-card-date">2026.01.09 ~ 2026.01.24</div>
+            </div>
+      
+            <div class="project-card-subtitle">
+              Custom APM 쿼리 추적 인프라 설계 및 가상 유저 테스트 기반 시스템 수용량 다차원 성능 엔지니어링 (Performance & SRE)
+            </div>
+      
+            <div class="project-card-content">
+              <ul class="project-card-list">
+                <li><b>[Custom APM 모니터링 툴 설계]</b> 런타임 시점의 고질적인 N+1 쿼리 폭증 및 숨은 슬로우 쿼리 병목 리스크를 코드레벨에서 선제 파악하기 위해 Spring AOP와 Hibernate <code>StatementInspector</code> 메커니즘을 결합한 커스텀 쿼리 트레이싱 APM(QueryCountInspector) 시스템을 독자적으로 기획 및 설계 완료</li>
+                <li><b>[동시성 Race Condition 제어 및 시스템 검증]</b> 동시 다발적인 지역 인기 상품 구매/예약 트래픽 인입 상황 시 발생 가능한 데이터 부정합 Race Condition 예외를 방지하기 위해 DB 비관적 락(Pessimistic Lock) 및 Redis 분산 락 제어 구조를 정립하고, k6 기반 500 VUs 가혹 테스트 시나리오를 구성하여 무결성 정합성 검증 성공</li>
+                <li><b>[Cache Stampede 최적화]</b> 대용량 메인 상품 인덱스 조회 중 캐시 만료 시 다수의 스레드가 DB 인프라로 동시 격돌해 병목을 유발하는 Cache Stampede 결함을 테스트 코드로 정밀 분석, Redis TTL 만료 연장 분산(Jitter 기술) 아키텍처 전략을 구현하여 TPS 가용 인프라 한계 고도화</li>
+                <li><b>[Polyglot Persistence 아키텍처 및 인프라 표준화]</b> 트랜잭션 ACID가 강제되는 메인 도메인은 관계형 MySQL에 적재하고 쓰기 폭증이 발생하는 비정형 대용량 채팅 메타는 NoSQL MongoDB로 격리 분리 구성하였으며, Docker Compose 통합 구성을 통해 로컬 테스트 파편화 차단</li>
+                <li><b>[비동기 아키텍처 성능 오프로딩]</b> SMS 인증 코드 발송 및 알림 푸시와 같이 대기 지연을 유발하는 타사 외부 연동 I/O 로직에 <code>@Async</code> 기반 비동기 전용 독립 쓰레드 풀 아키텍처를 이식함으로써 사용자 API 지연 속도 개선 및 톰캣 메인 풀 쓰레드 고갈 장애 원천 격리</li>
+              </ul>
+            </div>
+          </div>
+          
+      - layout: top-middle
+        title: ""
+        description: |
+          <div class="project-card">
+            <div class="project-card-header">
+              <a href="https://github.com/HeoJunHyoung/Linkfolio-backend" class="project-title-link" target="_blank">LinkFolio - 개발자 포트폴리오 큐레이션 및 커뮤니티 플랫폼</a>
+              <div class="project-card-date">2025.10.27 ~ 2025.12.12</div>
+            </div>
+      
+            <div class="project-card-subtitle">
+              Spring Cloud Gateway 기반 멀티 마이크로서비스(MSA) 설계 및 Kustomize-ArgoCD GitOps 자동화 플랫폼 운영
+            </div>
+      
+            <div class="project-card-content">
+              <ul class="project-card-list">
+                <li><b>[분산 인증 인프라 구조화]</b> Spring Cloud Gateway 기반의 분산 MSA 환경을 수립하고, 게이트웨이 레이어에 커스텀 <code>AuthorizationHeaderFilter</code>를 밀도있게 설계하여 토큰 유효성 선행 분기 처리 및 하위 MSA 도메인 서비스로의 보안 컨텍스트 주입 일원화</li>
+                <li><b>[이벤트 구동형 아키텍처 (EDA)]</b> Apache Kafka 분산 메시징 브로커를 분산 아키텍처에 연동하여 회원 등록 상태, 프로필 변경 동기화 이벤트를 비동기 오케스트레이션 처리함으로써 서비스 간 강결합도를 제거하고 분산 데이터베이스 환경에서의 데이터 최종 일관성 보장</li>
+                <li><b>[GitOps 보안 결함 혁신]</b> Kustomize의 Base/Overlay 디렉터리 템플릿 패턴을 도입하여 개발(Dev)/운영(Prod) 환경 매니페스트 설정을 표준화하고, GitOps 운영 시 민감한 자격 자산 노출의 취약점을 해결하기 위해 Bitnami SealedSecrets 자격 증명 암호화 시스템 수립</li>
+                <li><b>[성능 병목 튜닝 (SRE)]</b> k6 부하 테스트 가동 중 커뮤니티 목록 및 포트폴리오 dynamic query 지연 병목(p95 가파른 상승)을 포착, QueryDSL 구조 리팩토링 및 다중 페치 조인(Fetch Join) 최적화와 복합 인덱스(Compound Index) 배치를 통해 DB 부하를 차단하고 API 응답 속도 지표 60% 이상 향상 완수</li>
+                <li><b>[동시성 웹소켓 보안 예외 해결]</b> 대규모STOMP 세션 접속 시 멀티스레드 비동기 컨텍스트 격리로 시큐리티 Principal 유실 현상이 발생하던 동시성 결함을 추적, 핸드쉐이크 인터셉터 레이어에서 토큰 Attributes 검증을 복사 영속화하는 방식으로 버그 차단 체계 정립</li>
+              </ul>
+            </div>
+          </div>
+          
+      - layout: top-middle
+        title: ""
+        description: |
+          <div class="project-card">
+            <div class="project-card-header">
+              <a href="https://github.com/heojunhyoung/goteego-backend" class="project-title-link" target="_blank">GotEEgo - 매칭 및 실시간 소통 중심의 여행 동행 플랫폼</a>
+              <div class="project-card-date">2025.07.16 ~ 2025.08.24</div>
+            </div>
+      
+            <div class="project-card-subtitle">
+              Java Spring Boot 백엔드 아키텍처 설계 및 Terraform 기반 AWS EKS GitOps 플랫폼 인프라 구축 (Tech Lead)
+            </div>
+      
+            <div class="project-card-content">
+              <ul class="project-card-list">
+                <li><b>[인프라 자동화 (IaC)]</b> VPC 네트워크, 컴퓨팅(EKS), 데이터베이스(RDS, ElastiCache, DocumentDB), 네트워크 컴포넌트(CloudFront, Route53) 전체를 Terraform으로 모듈화 프로비저닝하고, S3 원격 백엔드 및 DynamoDB Lock 메커니즘을 적용해 협업 생산성 향상</li>
+                <li><b>[GitOps & 보안 자동화]</b> GitHub Actions CI 파이프라인 구축 시 하드코딩된 AWS Credentials 노출 차단을 위해 AWS OIDC 연동 롤을 설계하고, ALB Ingress Controller 및 ArgoCD 배포를 수립하여 Git 소스 스토리지 기반 무상태 GitOps 무중단 CD 환경 정립</li>
+                <li><b>[풀스택 가시성 모니터링]</b> Prometheus와 Grafana를 인프라에 배포하고 K8s 클러스터 리소스 현황, JVM 쓰레드 상태, RDS 성능 지표를 원격 통합 관제하는 커스텀 모니터링 대시보드 인프라 마련</li>
+                <li><b>[분산 실시간 메시징]</b> 단일 웹소켓 인스턴스의 확장성 한계를 극복하기 위해 Redis Pub/Sub 구조 메시지 브로커 및 STOMP 프로토콜을 백엔드에 통합 결합하여, 다중 컨테이너 인스턴스(Scale-out) 환경에서도 메시지 유실 없는 안정적인 실시간 채팅 파이프라인 구축</li>
+                <li><b>[이벤트 오프로딩]</b> 메인 애플리케이션 서버의 메모리/CPU 부하를 경감시키기 위해 이미지 리사이징 I/O 로직을 Spring Boot 내부에서 격리하고, AWS Lambda 기반의 이벤트 구동형(Event-driven) 파이프라인으로 위임 오프로딩 수행</li>
+              </ul>
+            </div>
+          </div>
+          
+      - layout: top-middle
+        title: ""
+        description: |
+          <div class="project-card">
+            <div class="project-card-header">
+              <a href="https://github.com/HeoJunHyoung/vinyl-groove-backend" class="project-title-link" target="_blank">Vinyl Groove - 한정판 레코드 데이터 허브 및 이커머스 플랫폼</a>
+              <div class="project-card-date">2025.07.07 ~ 2025.07.14</div>
+            </div>
+      
+            <div class="project-card-subtitle">
+              Spring Session-Redis 세션 클러스터링 고가용성 구조 수립 및 AWS EKS 클라우드 네이티브 컴퓨팅 아키텍처 자동화
+            </div>
+      
+            <div class="project-card-content">
+              <ul class="project-card-list">
+                <li><b>[분산 세션 클러스터링 (Stateless 인프라)]</b> 독립 톰캣 컨테이너 노드 내 메모리 의존 로그인 한계를 제거하기 위해 Spring Session 프레임워크와 AWS ElastiCache(Redis) 인프라를 외부 타깃 통합 레이어로 맵핑 연동하여, 완벽한 무상태(Stateless) 백엔드 분산 세션 공유 아키텍처 정립 및 로드밸런서 Sticky Session 종속성 영구 제거</li>
+                <li><b>[인프라 보안 프로토콜 튜닝]</b> Terraform IaC 아키텍처 코드를 통해 AWS VPC 백본 네트워크 인프라와 RDS, ElastiCache, EKS 컴퓨팅 노드 그룹 아키텍처 전체를 고도화 모듈로 격리 설계하였으며, K8s 서비스 어카운트에 AWS IAM 최소 권한을 다이렉트로 바인딩하는 IRSA(IAM Roles for Service Accounts) 보안 파이프라인 연동 가동</li>
+                <li><b>[캐싱 및 분산 데이터 정합성 설계]</b> 메인 DB의 물리적 Read 부하를 낮추기 위해 수시로 갱신되지 않는 카탈로그 상품 메타 데이터를 Redis 캐시 버퍼 레이어(Caching Layer)로 마이그레이션 적용하고, 동시 다발 결제 재고 차감 시 원자성 보장을 위해 Redisson 분산 락 동시성 설계 적용</li>
+              </ul>
+            </div>
+          </div>
+
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: 아주대학교
+        sub_title: 사이버보안학과 (3.85 / 4.5)
+        caption: 2018.03 ~ 2024.08
+        description: |
+            * 컴퓨터 과학 핵심 이론(자료구조, 알고리즘, 운영체제, 네트워크)
+            * Java/Python 프로그래밍, 데이터베이스 설계, 캡스톤 프로젝트 수행
+      - layout: left
+        title: 멋쟁이사자처럼
+        sub_title: 클라우드 엔지니어링 3기 수료
+        caption: 2025.03 ~ 2025.08
+        description: |
+          * Spring Boot, JPA 기반 백엔드 개발
+          * Docker, Kubernetes, AWS를 활용한 클라우드 인프라 구축
+          * GitOps 및 CI/CD 파이프라인 실무 경험
+
+  - title: ETC
+    layout: list
+    content:
+      - layout: left
+        title: OPIC IM3
+        caption: 2024.07 
+        description: 영어 능력 인증
+      - layout: left
+        title: SQLD
+        caption: 2025.05
+        description: SQL 개발자 자격증
+
+# Footer
+footer_show_references: true
+
+# Build Settings
+remote_theme: sproogen/modern-resume-theme
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-seo-tag
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "lib/", "scripts/", "docker-compose.yml"]
