@@ -1,8 +1,8 @@
 # Site Settings
-repository: HeoJunHyoung/cloud-resume
+repository: HeoJunHyoung/devops-resume   # 변경
 version: 2
 url: "https://heojunhyoung.github.io"
-baseurl: "/cloud-resume"
+baseurl: "/devops-resume"                # 변경
 
 # Latest Updated
 last_updated: "2026.06.02"
