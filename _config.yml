@@ -44,46 +44,54 @@ about_content: |
 
 
 
-# Content Configuration 
+# Content Configuration
 content:
   - title: Skills
-      layout: list
-      content:
-        - layout: left
-          title: Cloud & Infrastructure
-          description: |
-            * **AWS:** EKS, VPC, ALB, Route53, CloudFront, RDS, ElastiCache, S3, DocumentDB[cite: 1, 4, 6, 7]
-            * **IaC:** Terraform (Module Architecture, Remote State Backend & DynamoDB Lock)[cite: 1, 7]
-            * **Design:** High-Availability Multi-AZ Network & Cloud Architecture Design[cite: 1, 7]
-        - layout: left
-          title: Container & Orchestration
-          description: |
-            * **Orchestration:** Kubernetes (On-Premise 4-Node Cluster, Amazon EKS)[cite: 4, 5, 7]
-            * **Template Engine:** Kustomize (Base / Overlay Configuration)[cite: 4, 5]
-            * **Architecture:** Container-based Cloud Native Deployment Architecture[cite: 1, 4]
-        - layout: left
-          title: CI/CD & GitOps
-          description: |
-            * **CI:** GitHub Actions (AWS OIDC Federation Setup)[cite: 1, 4, 7]
-            * **CD & GitOps:** ArgoCD (App-of-Apps Pattern declarative Deployment)[cite: 1, 5]
-            * **Security:** Bitnami Sealed Secrets (GitOps Manifest Encryption)[cite: 4, 5]
-        - layout: left
-          title: Observability & Performance
-          description: |
-            * **Monitoring:** Prometheus, Grafana (Custom Metrics Dashboard Integration)[cite: 1, 5, 8]
-            * **Load Testing:** k6 Load / Stress Testing (Scenario-based Scripting)[cite: 1, 8]
-            * **SRE:** System Capacity & Application Performance Bottleneck Analysis[cite: 4, 8]
-        - layout: left
-          title: Backend Engineering
-          description: |
-            * **Language & Framework:** Java, Spring Boot[cite: 1, 4, 6]
-            * **Data Access:** JPA / Hibernate, QueryDSL (Dynamic Query Optimization)[cite: 4, 6, 8]
-            * **Security & Routing:** Spring Cloud Gateway, Spring Security, Spring Session[cite: 4, 6, 8]
-        - layout: left
-          title: Data & Messaging
-          description: |
-            * **Distributed Broker:** Apache Kafka (Event-Driven Architecture 설계)[cite: 4]
-            * **In-Memory & Storage:** Redis (Distributed Lock & Multi-tier Caching), MySQL, MongoDB[cite: 4, 6, 8]
+    layout: list
+    content:
+      - layout: left
+        title: Cloud & Infrastructure
+        description: |
+          * **AWS:** EKS, VPC, ALB, Route53, CloudFront, RDS, ElastiCache, S3, DocumentDB
+          * **IaC:** Terraform (Module Architecture, Remote State Backend & DynamoDB Lock)
+          * **Design:** High-Availability Multi-AZ Network & Cloud Architecture Design
+
+      - layout: left
+        title: Container & Orchestration
+        description: |
+          * **Orchestration:** Kubernetes (On-Premise 4-Node Cluster, Amazon EKS)
+          * **Template Engine:** Kustomize (Base / Overlay Configuration)
+          * **Architecture:** Container-based Cloud Native Deployment Architecture
+
+      - layout: left
+        title: CI/CD & GitOps
+        description: |
+          * **CI:** GitHub Actions (AWS OIDC Federation Setup)
+          * **CD & GitOps:** ArgoCD (App-of-Apps Pattern Declarative Deployment)
+          * **Security:** Bitnami Sealed Secrets (GitOps Manifest Encryption)
+
+      - layout: left
+        title: Observability & Performance
+        description: |
+          * **Monitoring:** Prometheus, Grafana (Custom Metrics Dashboard Integration)
+          * **Load Testing:** k6 Load & Stress Testing (Scenario-based Scripting)
+          * **SRE:** System Capacity Planning & Application Performance Analysis
+
+      - layout: left
+        title: Backend Engineering
+        description: |
+          * **Language & Framework:** Java, Spring Boot
+          * **Data Access:** JPA / Hibernate, QueryDSL
+          * **Security & Routing:** Spring Security, Spring Session, Spring Cloud Gateway
+
+      - layout: left
+        title: Data & Distributed Systems
+        description: |
+          * **Message Broker:** Apache Kafka (Event-Driven Architecture)
+          * **Caching & Concurrency:** Redis (Distributed Lock, Session Clustering, Multi-tier Caching)
+          * **Database:** MySQL, MongoDB (Polyglot Persistence)
+
+
 
 
 
