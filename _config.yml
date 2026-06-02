@@ -9,7 +9,7 @@ last_updated: "2026.06.02"
 
 # Personal Information
 name: 허준형
-title: Dev&Ops 엔지니어 (Cloud Infra & DevOps)
+title: DevOps 엔지니어
 
 # Appearance
 darkmode: never
@@ -31,18 +31,20 @@ about_profile_image: images/profile.png
 about_content: |
   <div class="slogan-container">
     <span class="quote-mark">“</span>
-      <span class="slogan-text">애플리케이션 소스코드부터 클라우드 아키텍처까지 인지하여 인프라를 지탱하는 Dev&Ops 엔지니어</span>
+      <span class="slogan-text">백엔드와 인프라를 함께 설계하는 DevOps 엔지니어</span>
     <span class="quote-mark">”</span>
   </div>
 
-  애플리케이션 백엔드의 데이터 흐름과 대용량 분산 메시징 인프라의 특성을 상호 유기적으로 이해하고, 비즈니스의 지속 가능한 도약을 인프라 레벨에서 자동화·최적화하는 Dev&Ops 엔지니어 허준형입니다. 백엔드 코드레벨에서의 사소한 오버헤드가 컨테이너 및 대규모 클라우드 플랫폼 상에서 확장성과 가용성에 미치는 영향을 정량적인 지표 기반으로 추적하는 것을 즐깁니다.
-  
-  인프라 운영(Ops) 레이어에서는 Terraform을 통해 멀티 AZ VPC, RDS, Cache 아키텍처 전체를 모듈화 구조로 프로비저닝(IaC)하고, AWS EKS 클러스터 위에 Kustomize와 ArgoCD의 App-of-Apps 패턴을 결합하여 선언적인 GitOps 배포 파이프라인을 체계화했습니다. 또한, 서비스 안정성을 위해 k6 가상 유저 가혹 부하 테스트(Stress/Load Testing)와 Prometheus/Grafana 가시성 모니터링을 주도했으며, 런타임 환경의 N+1 문제와 병목을 해결하기 위해 Hibernate 인터셉터 기반의 실시간 쿼리 카운팅 APM 툴을 직접 설계해 데이터 기반 성능 고도화(Performance Engineering)를 완수했습니다.
+  안녕하세요. DevOps 엔지니어 허준형입니다.
 
-  Java와 Spring Boot 환경에서 고트래픽 트래픽 정합성을 제어하기 위해 Redis 분산 락 및 Redis Pub/Sub을 활용한 분산 웹소켓 채팅 인프라를 고안했으며, Spring Cloud Gateway 레이어에 커스텀 인가 필터를 구축하여 마이크로서비스(MSA) 분산 보안 구조를 고도화했습니다. 분산 DB 환경에서 데이터 결합도를 끊기 위해 Apache Kafka 기반 비동기 이벤트 구동형 아키텍처(EDA)를 정립하고 보상 트랜잭션 및 데이터 최종 일관성(Eventual Consistency) 구조를 오케스트레이션한 경험이 있습니다.
-  
-  사이버보안학 전공 배경을 바탕으로 IAM OIDC, IRSA 프로토콜 및 Bitnami Sealed Secrets 암호화 메커니즘을 결합한 보안 최우선주의(Security by Design) 아키텍처를 일관되게 고수하며, 기술적 문제를 분석하고 트러블슈팅한 과정을 250건 이상의 기술 블로그 포스팅으로 투명하게 영속화하고 있습니다.
+  애플리케이션 코드부터 클라우드 인프라까지 전체 시스템을 이해하고, 안정적이고 확장 가능한 서비스 운영 환경을 구축하는 데 관심이 있습니다. 백엔드 개발 경험을 바탕으로 성능 병목과 운영 이슈를 인프라 관점에서 분석하고 개선해 왔습니다.
 
+  AWS, Kubernetes(EKS), Terraform 기반의 클라우드 인프라를 구축했으며, ArgoCD와 GitOps를 활용한 자동화 배포 환경을 설계했습니다. 또한 Prometheus, Grafana, k6를 활용하여 서비스 성능과 가용성을 지속적으로 개선했습니다.
+
+  Spring Boot 환경에서는 Redis, Kafka를 활용한 분산 시스템을 구현하고, 데이터 일관성과 확장성을 고려한 아키텍처를 설계한 경험이 있습니다.
+
+  문제 해결 과정과 학습 내용을 250건 이상의 기술 블로그에 기록하며 지속적으로 지식을 공유하고 있습니다.
+  
 # Content Configuration 
 content:
   - title: Skills
