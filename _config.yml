@@ -52,45 +52,33 @@ content:
       - layout: left
         title: Cloud & Infrastructure
         description: |
-          * **AWS:** EKS, VPC, ALB, Route53, CloudFront, RDS, ElastiCache, S3, DocumentDB
-          * **IaC:** Terraform (Module Architecture, Remote State Backend & DynamoDB Lock)
-          * **Design:** High-Availability Multi-AZ Network & Cloud Architecture Design
+          * **AWS:** EKS, VPC, ALB, Route53, CloudFront, S3, RDS, ElastiCache, DocumentDB
+          * **IaC:** Terraform (모듈 설계, 원격 상태 관리, DynamoDB Lock)
+          * **설계:** 멀티 AZ 고가용성 네트워크 및 클라우드 아키텍처 설계
 
       - layout: left
-        title: Container & Orchestration
+        title: Container & GitOps
         description: |
-          * **Orchestration:** Kubernetes (On-Premise 4-Node Cluster, Amazon EKS)
-          * **Template Engine:** Kustomize (Base / Overlay Configuration)
-          * **Architecture:** Container-based Cloud Native Deployment Architecture
-
-      - layout: left
-        title: CI/CD & GitOps
-        description: |
-          * **CI:** GitHub Actions (AWS OIDC Federation Setup)
-          * **CD & GitOps:** ArgoCD (App-of-Apps Pattern Declarative Deployment)
-          * **Security:** Bitnami Sealed Secrets (GitOps Manifest Encryption)
+          * **컨테이너 오케스트레이션:** Kubernetes (On-Premise 클러스터 구축, EKS)
+          * **구성 관리:** Kustomize (Base/Overlay 전략)
+          * **CI/CD:** GitHub Actions (OIDC 연동), ArgoCD (App-of-Apps 패턴)
+          * **시크릿 관리:** Bitnami Sealed Secrets
 
       - layout: left
         title: Observability & Performance
         description: |
-          * **Monitoring:** Prometheus, Grafana (Custom Metrics Dashboard Integration)
-          * **Load Testing:** k6 Load & Stress Testing (Scenario-based Scripting)
-          * **SRE:** System Capacity Planning & Application Performance Analysis
+          * **모니터링:** Prometheus, Grafana (커스텀 메트릭 대시보드)
+          * **부하 테스트:** k6 (시나리오 기반 부하/스트레스 테스트)
+          * **SRE:** 시스템 용량 계획 및 애플리케이션 성능 분석
 
       - layout: left
         title: Backend Engineering
         description: |
-          * **Language & Framework:** Java, Spring Boot
-          * **Data Access:** JPA / Hibernate, QueryDSL
-          * **Security & Routing:** Spring Security, Spring Session, Spring Cloud Gateway
-
-      - layout: left
-        title: Data & Distributed Systems
-        description: |
-          * **Message Broker:** Apache Kafka (Event-Driven Architecture)
-          * **Caching & Concurrency:** Redis (Distributed Lock, Session Clustering, Multi-tier Caching)
-          * **Database:** MySQL, MongoDB (Polyglot Persistence)
-
+          * **언어/프레임워크:** Java, Spring Boot
+          * **데이터 접근:** JPA/Hibernate, QueryDSL
+          * **분산 시스템:** Apache Kafka (이벤트 기반 아키텍처), Redis (분산 락, 세션 클러스터링)
+          * **데이터베이스:** MySQL, MongoDB (폴리글랏 퍼시스턴스)
+          * **보안/라우팅:** Spring Security, Spring Session, Spring Cloud Gateway
 
 
 
@@ -103,7 +91,7 @@ content:
         description: |
           <div class="project-card">
             <div class="project-card-header">
-              <a href="https://github.com/HeoJunHyoung/re-market" class="project-title-link" target="_blank">Re:Market - 하이퍼 로컬 중고 거래 플랫폼 및 채팅 서비스</a>
+              <a href="https://github.com/HeoJunHyoung/re-market" class="project-title-link" target="_blank">Re:Market - 하이퍼 로컬 중고 거래 플랫폼</a>
               <div class="project-card-date">2026.01.09 ~ 2026.01.24</div>
             </div>
       
@@ -127,7 +115,7 @@ content:
         description: |
           <div class="project-card">
             <div class="project-card-header">
-              <a href="https://github.com/HeoJunHyoung/Linkfolio-backend" class="project-title-link" target="_blank">LinkFolio - 개발자 포트폴리오 큐레이션 및 커뮤니티 플랫폼</a>
+              <a href="https://github.com/HeoJunHyoung/Linkfolio-backend" class="project-title-link" target="_blank">LinkFolio - 개발자 포트폴리오 공유 및 채용 플랫폼</a>
               <div class="project-card-date">2025.10.27 ~ 2025.12.12</div>
             </div>
       
@@ -151,7 +139,7 @@ content:
         description: |
           <div class="project-card">
             <div class="project-card-header">
-              <a href="https://github.com/heojunhyoung/goteego-backend" class="project-title-link" target="_blank">GotEEgo - 매칭 및 실시간 소통 중심의 여행 동행 플랫폼</a>
+              <a href="https://github.com/heojunhyoung/goteego-backend" class="project-title-link" target="_blank">GotEEgo - 사용자 맞춤 여행 메이트 추천 플랫폼</a>
               <div class="project-card-date">2025.07.16 ~ 2025.08.24</div>
             </div>
       
@@ -175,7 +163,7 @@ content:
         description: |
           <div class="project-card">
             <div class="project-card-header">
-              <a href="https://github.com/HeoJunHyoung/vinyl-groove-backend" class="project-title-link" target="_blank">Vinyl Groove - 한정판 레코드 데이터 허브 및 이커머스 플랫폼</a>
+              <a href="https://github.com/HeoJunHyoung/vinyl-groove-backend" class="project-title-link" target="_blank">Vinyl Groove - 재즈 LP 수집가를 위한 이커머스 플랫폼</a>
               <div class="project-card-date">2025.07.07 ~ 2025.07.14</div>
             </div>
       
