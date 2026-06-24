@@ -267,3 +267,170 @@ body {
 .project-card * { box-sizing: border-box !important; }
 .content .list__item .list__item__body { background-color: transparent !important; padding: 0 !important; box-shadow: none !important; }
 .content .list__item { background-color: transparent !important; margin-bottom: 20px !important; box-shadow: none !important; }
+
+/* =========================================
+   9. Portfolio Banner (포트폴리오 보러가기)
+   ========================================= */
+.portfolio-banner-container {
+  margin-top: 40px !important;
+  margin-bottom: 20px !important;
+}
+
+.portfolio-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #ffffff 0%, #f4f7fc 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 35px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 배경 도트 무늬 (사진 양 끝에 있는 점 패턴) */
+.portfolio-banner::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 60px;
+  height: 60px;
+  background-image: radial-gradient(#d1d8e0 2.5px, transparent 2.5px);
+  background-size: 15px 15px;
+  opacity: 0.6;
+}
+.portfolio-banner::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  background-image: radial-gradient(#d1d8e0 2.5px, transparent 2.5px);
+  background-size: 15px 15px;
+  opacity: 0.6;
+}
+
+.pb-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.pb-pdf-img {
+  width: 140px;
+  height: auto;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.1));
+}
+
+.pb-center {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.pb-badge {
+  display: inline-block;
+  background-color: #eef2ff;
+  color: #3b82f6;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.pb-title {
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+  color: #1e293b !important;
+  margin-bottom: 10px !important;
+  border-bottom: none !important;
+  display: block !important;
+}
+
+.pb-subtitle {
+  font-size: 1.05rem;
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.pb-button {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.pb-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.pb-note {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-top: 15px;
+}
+
+.pb-right {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.pb-checklist {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: left;
+}
+
+.pb-checklist li {
+  font-size: 1.05rem;
+  color: #334155;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.pb-checklist li i {
+  color: #3b82f6;
+  margin-right: 12px;
+  font-size: 1.3rem;
+}
+
+/* 태블릿 & 모바일 환경 반응형 처리 */
+@media (max-width: 992px) {
+  .portfolio-banner {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  .pb-left, .pb-right {
+    margin: 20px 0;
+  }
+  .pb-center {
+    padding: 0;
+  }
+  .pb-right {
+    border-top: 1px dashed #cbd5e1;
+    padding-top: 25px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
