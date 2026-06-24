@@ -26,6 +26,15 @@ additional_links:
     icon: fa fa-tistory-custom
     url: https://receiver40.tistory.com/
 
+############################################################
+<div class="portfolio-banner"> <div class="portfolio-info"> <div class="portfolio-label">PORTFOLIO</div> <div class="portfolio-title">프로젝트 상세 포트폴리오</div> <div class="portfolio-desc"> 아키텍처 설계, 성능 개선 과정, 기술 선택 근거를 정리한 PDF 문서 </div> </div>
+
+<a href="https://drive.google.com/file/d/1C3DG98mwupfVfZRaSptACoeEs993-v18/view" target="_blank" class="portfolio-button">
+PDF 열기 →
+</a>
+
+</div>
+###########################################################
 
 # About Section
 about_profile_image: images/profile.png
