@@ -268,12 +268,18 @@ body {
 .content .list__item .list__item__body { background-color: transparent !important; padding: 0 !important; box-shadow: none !important; }
 .content .list__item { background-color: transparent !important; margin-bottom: 20px !important; box-shadow: none !important; }
 
+
+
 /* =========================================
    9. Portfolio Banner (포트폴리오 보러가기)
    ========================================= */
 .portfolio-banner-container {
-  margin-top: 40px !important;
-  margin-bottom: 20px !important;
+  /* 1. 간격 축소: 윗쪽 여백을 없애거나 줄여서 헤더 바로 아래에 붙입니다. */
+  /* 더 바짝 붙이고 싶다면 -10px, -20px 처럼 음수(-) 값을 넣으시면 됩니다. */
+  margin-top: 0px !important; 
+  
+  /* About Me 섹션과의 간격은 조금 넉넉하게 줍니다. */
+  margin-bottom: 50px !important; 
 }
 
 .portfolio-banner {
@@ -283,13 +289,13 @@ body {
   background: linear-gradient(135deg, #ffffff 0%, #f4f7fc 100%);
   border: 1px solid #e2e8f0;
   border-radius: 16px;
-  padding: 35px 40px;
+  padding: 40px 50px; /* 패딩을 약간 더 키워 배너를 넉넉하게 만듭니다 */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
 }
 
-/* 배경 도트 무늬 (사진 양 끝에 있는 점 패턴) */
+/* 배경 도트 무늬 */
 .portfolio-banner::before {
   content: "";
   position: absolute;
@@ -321,7 +327,7 @@ body {
 }
 
 .pb-pdf-img {
-  width: 140px;
+  width: 160px; /* 아이콘 크기 확대 */
   height: auto;
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.1));
 }
@@ -340,36 +346,37 @@ body {
   display: inline-block;
   background-color: #eef2ff;
   color: #3b82f6;
-  font-size: 0.85rem;
+  font-size: 1.1rem; /* 뱃지 글자 크기 확대 */
   font-weight: 700;
-  padding: 6px 14px;
+  padding: 8px 18px; /* 뱃지 여백 확대 */
   border-radius: 20px;
   margin-bottom: 15px;
   letter-spacing: 0.5px;
 }
 
 .pb-title {
-  font-size: 2.2rem !important;
+  font-size: 2.8rem !important; /* 제목 크기 대폭 확대 */
   font-weight: 800 !important;
   color: #1e293b !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 15px !important;
   border-bottom: none !important;
   display: block !important;
 }
 
 .pb-subtitle {
-  font-size: 1.05rem;
+  font-size: 1.4rem; /* 부제목 크기 확대 */
   color: #64748b;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  word-break: keep-all;
 }
 
 .pb-button {
   display: inline-block;
   background-color: #2563eb;
   color: #ffffff !important;
-  font-size: 1.1rem;
-  font-weight: 600;
-  padding: 14px 32px;
+  font-size: 1.4rem; /* 버튼 글자 크기 확대 */
+  font-weight: 700;
+  padding: 16px 36px; /* 버튼 자체 크기 확대 */
   border-radius: 8px;
   text-decoration: none !important;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -382,7 +389,7 @@ body {
 }
 
 .pb-note {
-  font-size: 0.85rem;
+  font-size: 1.1rem; /* 안내 문구 크기 확대 */
   color: #94a3b8;
   margin-top: 15px;
 }
@@ -402,9 +409,9 @@ body {
 }
 
 .pb-checklist li {
-  font-size: 1.05rem;
+  font-size: 1.4rem; /* 체크리스트 글자 크기 확대 */
   color: #334155;
-  margin-bottom: 12px;
+  margin-bottom: 16px; /* 줄 간격 확대 */
   display: flex;
   align-items: center;
 }
@@ -412,7 +419,7 @@ body {
 .pb-checklist li i {
   color: #3b82f6;
   margin-right: 12px;
-  font-size: 1.3rem;
+  font-size: 1.6rem; /* 체크 아이콘 크기 확대 */
 }
 
 /* 태블릿 & 모바일 환경 반응형 처리 */
